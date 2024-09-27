@@ -1,4 +1,4 @@
 # BingoBook
 
 
-[live link](https://roshanbhadauriya.github.io/BingoBook/)
+[live link](https://bingobook.netlify.app/)
