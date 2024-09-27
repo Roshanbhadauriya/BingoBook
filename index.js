@@ -12,12 +12,15 @@ function addtodo(value){
        p.appendChild(document.createTextNode(value));
        newDiv.id= id;
        newDiv.className= "bounty";
+
          let edit = document.createElement("a");
          edit.className = "edit";
          edit.appendChild(document.createTextNode("edit"));
          let deleteit = document.createElement("a");
          deleteit.className = "delete";
          deleteit.appendChild(document.createTextNode("delete"));
+
+
          newDiv.appendChild(p);
        newDiv.appendChild(edit);
        newDiv.appendChild(deleteit);
@@ -41,7 +44,6 @@ document.querySelector(".bounty-area").addEventListener("click" , function(e){
  if(e.target.className === "delete"){
     let parent = e.target.parentNode;
     parent.remove();
-    alert("your bounty is deleted");
  }
   
 })
@@ -63,4 +65,3 @@ document.querySelector(".bounty-area").addEventListener("click" , function(e){
  
  })
    
- 

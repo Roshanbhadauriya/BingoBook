@@ -50,7 +50,7 @@ main {
 .bounty-area {
   border-radius: 5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   
 }
 .bounty {
