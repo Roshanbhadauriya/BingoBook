@@ -38,22 +38,14 @@ form.addEventListener('submit',function(e){
       
 })
 
-/// delete todo
+/// delete and edit the todo 
 document.querySelector(".bounty-area").addEventListener("click" , function(e){
  
  if(e.target.className === "delete"){
     let parent = e.target.parentNode;
     parent.remove();
  }
-  
-})
-
-
-/// edit tododocument.querySelector(".bounty-area").addEventListener("click" , function(e){
-
-document.querySelector(".bounty-area").addEventListener("click" , function(e){
- 
-  if(e.target.className === "edit"){
+ else if(e.target.className === "edit"){
      let parent = e.target.parentNode;
      let parentId = parent.id;
      console.log(parentId)
@@ -62,6 +54,7 @@ document.querySelector(".bounty-area").addEventListener("click" , function(e){
      document.querySelector('#todos').value = `${first.innerHTML}`;
      parent.remove(); 
   }
- 
- })
+})
+
+
    
